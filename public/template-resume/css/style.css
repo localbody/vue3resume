@@ -1,6 +1,10 @@
 @import url(./reset.css);
 @import url(./fonts.css);
 
+:root {
+  --gray-lightest: #f7f9fc;
+}
+
 html,
 *,
 *::after,
@@ -17,5 +21,21 @@ body {
 }
 
 .aside {
-  width: 22.1875em;
+  width: 22.25em;
+  background-color: var(--gray-lightest);
+  padding: 3em;
+  display: grid;
+  gap: 2em;
+}
+
+.aside__header {
+  display: grid;
+  gap: 1em;
+}
+
+.photo {
+  width: 6em;
+  height: 6em;
+  border-radius: 100%;
+  overflow: hidden;
 }
