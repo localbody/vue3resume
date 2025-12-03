@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32.269299"
+   height="24.202"
+   viewBox="0 0 32.269299 24.202"
+   fill="none"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="spanish.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="15.666667"
+     inkscape:cx="16.37234"
+     inkscape:cy="16.37234"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g14" />
+  <g
+     filter="url(#filter0_d_454_1866)"
+     id="g15"
+     transform="translate(-16.1347,-12.101)">
+    <g
+       clip-path="url(#clip0_454_1866)"
+       id="g14">
+      <rect
+         x="16.134701"
+         y="12.101"
+         width="32.269402"
+         height="24.202"
+         fill="#e1e7fe"
+         id="rect1" />
+      <g
+         clip-path="url(#clip1_454_1866)"
+         id="g13">
+        <mask
+           id="mask0_454_1866"
+           maskUnits="userSpaceOnUse"
+           x="16"
+           y="12"
+           width="33"
+           height="25">
+          <path
+             d="M 45.3308,12.101 H 19.2079 c -1.6973,0 -3.0732,1.4448 -3.0732,3.2269 v 17.7482 c 0,1.7822 1.3759,3.2269 3.0732,3.2269 h 26.1229 c 1.6973,0 3.0732,-1.4447 3.0732,-3.2269 V 15.3279 c 0,-1.7821 -1.3759,-3.2269 -3.0732,-3.2269 z"
+             fill="#ffffff"
+             id="path1" />
+        </mask>
+        <g
+           mask="url(#mask0_454_1866)"
+           id="g12">
+          <path
+             d="M 45.3308,12.101 H 19.2079 c -1.6973,0 -3.0732,1.4448 -3.0732,3.2269 v 17.7482 c 0,1.7822 1.3759,3.2269 3.0732,3.2269 h 26.1229 c 1.6973,0 3.0732,-1.4447 3.0732,-3.2269 V 15.3279 c 0,-1.7821 -1.3759,-3.2269 -3.0732,-3.2269 z"
+             fill="#cd0b20"
+             id="path2" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="M 16.1347,18.5549 H 48.404 V 29.8491 H 16.1347 Z"
+             fill="#ffcb00"
+             id="path3" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="m 29.9644,22.14 v 4.0659 c 0,1.1295 -1.0326,2.033 -2.305,2.033 h -3.0732 c -1.2693,-0.0032 -2.305,-0.9116 -2.305,-2.0362 v -4.0659 c 0,-0.9229 0.6884,-1.6942 1.635,-1.9442 0.2858,-0.839 1.1648,-0.0872 2.2066,-0.0872 1.048,0 1.9208,-0.747 2.2066,0.0888 0.9435,0.2565 1.635,1.0294 1.635,1.9458 z"
+             fill="#c8b47c"
+             id="path4" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="m 29.9644,23.3953 h 1.5366 v 4.8404 h -1.5366 z m -9.2198,0 h 1.5366 v 4.8404 h -1.5366 z"
+             fill="#b5b5b5"
+             id="path5" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="m 29.9644,26.6223 h 1.5366 v 1.6134 h -1.5366 z m -9.2198,0 h 1.5366 v 1.6134 h -1.5366 z"
+             fill="#165c96"
+             id="path6" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="m 29.9644,21.7818 h 1.5366 v 1.6135 h -1.5366 z m -9.2198,0 h 1.5366 v 1.6135 h -1.5366 z"
+             fill="#a0790a"
+             id="path7" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="m 23.8179,21.7818 h 1.5366 v 2.4202 h -1.5366 z m 3.0732,3.2269 h 1.5367 v 2.4202 h -1.5367 z"
+             fill="#d20636"
+             id="path8" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="m 26.8911,21.7818 h 1.5367 v 2.4202 h -1.5367 z"
+             fill="#a18793"
+             id="path9" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="m 23.8179,25.0088 h 1.5366 v 2.4202 h -1.5366 z"
+             fill="#ffe100"
+             id="path10" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="m 25.3545,21.7818 -1.5366,-1.6135 h 4.6099 l -1.5367,1.6135 z"
+             fill="#b6161a"
+             id="path11" />
+          <path
+             fill-rule="evenodd"
+             clip-rule="evenodd"
+             d="m 25.3545,18.5549 h 1.5366 v 1.6134 h -1.5366 z"
+             fill="#ac9300"
+             id="path12" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs
+     id="defs18">
+    <filter
+       id="filter0_d_454_1866"
+       x="-5.72205e-06"
+       y="3.3378601e-06"
+       width="64.538696"
+       height="56.471401"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood15" />
+      <feColorMatrix
+         in="SourceAlpha"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+         result="hardAlpha"
+         id="feColorMatrix15" />
+      <feOffset
+         dy="4.03367"
+         id="feOffset15" />
+      <feGaussianBlur
+         stdDeviation="8.06734"
+         id="feGaussianBlur15" />
+      <feColorMatrix
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+         id="feColorMatrix16" />
+      <feBlend
+         mode="normal"
+         in2="BackgroundImageFix"
+         result="effect1_dropShadow_454_1866"
+         id="feBlend16" />
+      <feBlend
+         mode="normal"
+         in="SourceGraphic"
+         in2="effect1_dropShadow_454_1866"
+         result="shape"
+         id="feBlend17" />
+    </filter>
+    <clipPath
+       id="clip0_454_1866">
+      <rect
+         x="16.134701"
+         y="12.101"
+         width="32.269402"
+         height="24.202"
+         rx="4.0336699"
+         fill="#ffffff"
+         id="rect17" />
+    </clipPath>
+    <clipPath
+       id="clip1_454_1866">
+      <rect
+         width="32.269402"
+         height="24.202"
+         fill="#ffffff"
+         transform="translate(16.1347,12.101)"
+         id="rect18"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+</svg>
