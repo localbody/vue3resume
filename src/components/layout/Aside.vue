@@ -1,68 +1,24 @@
 <script setup>
 import Header from '@/components/Header.vue';
+import Quotes from '../UI/Quotes.vue';
+import Row from '../UI/Row.vue';
 </script>
 
 <template>
     <div class="aside">
-        <Header />
+        <Header src="/images/photo.jpg" name="Anurag Yadav" alt="Anurag Yadav" />
         <!--  -->
-        <div class="quotes">
-            A well-organized, creative and goaloriented graduate possessing
-            excellent communication, problem-solving and leadership skills with a
-            flair to explore Computer Science Engineering
-        </div>
+        <Quotes text="A well-organized, creative and goaloriented graduate possessing
+        excellent communication, problem-solving and leadership skills with a
+        flair to explore Computer Science Engineering" /> 
         <!--  -->
         <hr />
         <!--  -->
         <div class="rows rows--infos">
-            <div class="row">
-                <div class="row__icon">
-                    <img src="/icons/mail.svg" alt="" />
-                </div>
-                <div class="row__wrapper">
-                    <span class="row__title">Email</span>
-                    <div class="row__subtitle">
-                        <a class="row__link" href="mailto:anuragyadavmnp@gmail.com">anuragyadavmnp@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="row">
-                <div class="row__icon">
-                    <img src="/icons/link.svg" alt="" />
-                </div>
-                <div class="row__wrapper">
-                    <span class="row__title">Website</span>
-                    <div class="row__subtitle">
-                        <a class="row__link row__link--underline"
-                            href="https://anuragyadav365.github.io/portfolio.html">https://anuragyadav365.github.io/portfolio.html</a>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="row">
-                <div class="row__icon">
-                    <img src="/icons/phone.svg" alt="" />
-                </div>
-                <div class="row__wrapper">
-                    <span class="row__title">Phone</span>
-                    <div class="row__subtitle">
-                        <a class="row__link" href="tel:+(+91) 981 5533 309">(+91) 981 5533 309</a>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="row">
-                <div class="row__icon">
-                    <img src="/icons/location.svg" alt="" />
-                </div>
-                <div class="row__wrapper">
-                    <span class="row__title">Address</span>
-                    <div class="row__subtitle">
-                        <span class="row__text">Hallomajra, Chandigarh, India</span>
-                    </div>
-                </div>
-            </div>
+            <Row icon="/icons/mail.svg" title="Email" :link="{ href: 'mailto:anuragyadavmnp@gmail.com', title: 'anuragyadavmnp@gmail.com' }" />
+            <Row icon="/icons/link.svg" title="Website" :link="{ href:'https://anuragyadav365.github.io/portfolio.html', title: 'https://anuragyadav365.github.io/portfolio.html' }" />
+            <Row icon="/icons/phone.svg" title="Phone" :link="{ href:'tel:+(+91) 981 5533 309', title: '(+91) 981 5533 309' }" />
+            <Row icon="/icons/location.svg" title="Address" :link= "{ title: 'Hallomajra, Chandigarh, India' }" />
         </div>
         <!--  -->
         <hr />

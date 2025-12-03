@@ -1,4 +1,4 @@
-<script setup>
+<script>
 
 </script>
 
@@ -246,7 +246,7 @@
                             </p>
                             <div class="project__footer">
                                 <div class="project__footer-logo">
-                                    <img src="./icons/figma--blue.svg" alt="" />
+                                    <img src="/icons/figma--blue.svg" alt="" />
                                 </div>
                                 <a class="project__link" href="https//figma.com">https//figma.com</a>
                             </div>
@@ -262,7 +262,7 @@
                             </p>
                             <div class="project__footer">
                                 <div class="project__footer-logo">
-                                    <img src="./icons/link--blue.svg" alt="" />
+                                    <img src="/icons/link--blue.svg" alt="" />
                                 </div>
                                 <a class="project__link"
                                     href="https://anuragyadav365.github.io">https://anuragyadav365.github.io</a>
@@ -294,7 +294,7 @@
                             </div>
 
                             <div class="award__wrapper">
-                                <span class="award__title">Data Strcture & Algorithms</span>
+                                <span class="award__title">Data Structure & Algorithms</span>
                                 <div class="award__subtitle">Google</div>
                             </div>
                             <div class="award__dates">Mar 2021 - Jun 2021</div>
