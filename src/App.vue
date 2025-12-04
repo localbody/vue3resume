@@ -1,16 +1,15 @@
 <script>
-import Aside from './components/layout/Aside.vue';
-import Main from './components/layout/Main.vue';
+import Aside from '@/components/layout/Aside.vue'
+import Main from '@/components/layout/Main.vue'
 
 export default {
-  name: 'App', 
+  name: 'App',
   components: {
     Aside,
-    Main
-  }
+    Main,
+  },
 }
 </script>
-
 
 <template>
   <div class="container">
@@ -19,6 +18,4 @@ export default {
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

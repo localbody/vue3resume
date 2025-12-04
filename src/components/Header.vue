@@ -2,31 +2,25 @@
 export default {
   name: 'Header',
   props: {
-    src: {
+    photo: {
       type: String,
-      required: true
-    },
-    alt: {
-      type: String,
-      default: ''
+      required: true,
     },
     name: {
       type: String,
-      required: true
-    }
-  }
-};
+      required: true,
+    },
+  },
+}
 </script>
 
 <template>
   <div class="header">
     <div class="header__photo">
-      <img :src="src" :alt="alt" />
+      <img :src="photo" :alt="name" />
     </div>
     <h1 class="header__name">{{ name }}</h1>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

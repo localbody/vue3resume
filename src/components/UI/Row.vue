@@ -12,7 +12,7 @@ export default {
     },
     link: {
       type: Object,
-      required: true,
+      required: false,
     },
   },
 }
