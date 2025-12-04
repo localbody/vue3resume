@@ -22,7 +22,7 @@ html,
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 400;
   font-style: normal;
   text-rendering: auto;
@@ -90,6 +90,11 @@ hr {
   gap: 1.5em;
 }
 
+.rows-wrapper {
+  display: grid;
+  gap: 1.5em;
+}
+
 .rows__title {
   font-size: 0.75em;
   color: var(--gray-default);
@@ -117,8 +122,8 @@ hr {
 }
 
 .rows--infos .row__icon img {
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
 }
 
 .row__title {
@@ -160,7 +165,7 @@ hr {
 .section::before {
   position: absolute;
   background-color: white;
-  content: "";
+  content: '';
   display: block;
   top: 0em;
   left: -1em;
@@ -173,7 +178,7 @@ hr {
 
 .section::after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0.75em;
   left: -0.25em;
   width: 0.5em;
@@ -247,7 +252,7 @@ hr {
 }
 
 .education__percentage::before {
-  content: "Percentage";
+  content: 'Percentage';
   color: var(--iris);
 }
 
@@ -266,7 +271,7 @@ hr {
 }
 
 .experience::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -2.5em;
   top: 0;
@@ -278,7 +283,7 @@ hr {
 }
 
 .experience::after {
-  content: "";
+  content: '';
   position: absolute;
   left: -2em;
   top: 0.5em;
@@ -322,7 +327,7 @@ hr {
 }
 
 .experience__location::before {
-  content: "";
+  content: '';
   width: 0.75em;
   height: 0.75em;
   background-image: url(../icons/location.svg);
@@ -410,9 +415,9 @@ hr {
 .project {
   display: grid;
   grid-template-areas:
-    "project__logo project__name"
-    "project__logo project__description"
-    "project__footer project__footer";
+    'project__logo project__name'
+    'project__logo project__description'
+    'project__footer project__footer';
   column-gap: 1em;
   row-gap: 0.5em;
 }
@@ -504,3 +509,69 @@ hr {
   font-weight: 300;
 }
 /* end award */
+
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    width: initial;
+  }
+
+  .rows-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .rows--infos .rows-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .rows-wrapper,
+  .rows--infos .rows-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .experience {
+    display: grid;
+  }
+
+  .main {
+    width: 100vw;
+  }
+
+  .cards--projects {
+    flex-wrap: wrap;
+  }
+
+  .cards--education {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .cards--skills > .card,
+  .cards--skills > .card--big {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .project {
+    display: grid;
+    grid-template-areas:
+      'project__logo'
+      'project__name'
+      'project__description'
+      'project__footer     ';
+    column-gap: 1em;
+    row-gap: 0.5em;
+  }
+}

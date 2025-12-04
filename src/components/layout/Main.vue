@@ -227,7 +227,7 @@ export default {
       <div class="section">
         <div class="section__title">Latest projects</div>
         <div class="section__content">
-          <div class="cards">
+          <div class="cards cards--projects">
             <Project
               v-for="{ image, name, description, logo, link } in cards.project"
               :image

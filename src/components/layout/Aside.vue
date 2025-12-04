@@ -138,46 +138,54 @@ export default {
     />
     <hr />
     <div class="rows rows--infos">
-      <Row
-        v-for="(item, index) in itemsRows.infos"
-        :icon="item.icon"
-        :title="item.title"
-        :link="item.link"
-        :key="index"
-      />
+      <div class="rows-wrapper">
+        <Row
+          v-for="(item, index) in itemsRows.infos"
+          :icon="item.icon"
+          :title="item.title"
+          :link="item.link"
+          :key="index"
+        />
+      </div>
     </div>
     <hr />
     <div class="rows rows--socials">
-      <span class="rows__title">Socials</span>
-      <Row
-        v-for="(item, index) in itemsRows.socials"
-        :icon="item.icon"
-        :title="item.title"
-        :link="item.link"
-        :key="index"
-      />
+      <div class="rows-wrapper">
+        <span class="rows__title">Socials</span>
+        <Row
+          v-for="(item, index) in itemsRows.socials"
+          :icon="item.icon"
+          :title="item.title"
+          :link="item.link"
+          :key="index"
+        />
+      </div>
     </div>
     <hr />
     <div class="rows rows--languages">
-      <span class="rows__title"> Languages </span>
+      <div class="rows-wrapper">
+        <span class="rows__title"> Languages </span>
 
-      <Row
-        v-for="(item, index) in itemsRows.languages"
-        :icon="item.icon"
-        :title="item.title"
-        :link="item.link"
-        :key="index"
-      />
+        <Row
+          v-for="(item, index) in itemsRows.languages"
+          :icon="item.icon"
+          :title="item.title"
+          :link="item.link"
+          :key="index"
+        />
+      </div>
     </div>
     <hr />
     <div class="rows rows--hobbies-interests">
-      <span class="rows__title">Hobbies & Interests</span>
-      <Row
-        v-for="(item, index) in itemsRows.hobbies_interests"
-        :icon="item.icon"
-        :title="item.title"
-        :key="index"
-      />
+      <div class="rows-wrapper">
+        <span class="rows__title">Hobbies & Interests</span>
+        <Row
+          v-for="(item, index) in itemsRows.hobbies_interests"
+          :icon="item.icon"
+          :title="item.title"
+          :key="index"
+        />
+      </div>
     </div>
   </div>
 </template>
