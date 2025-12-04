@@ -457,6 +457,7 @@ hr {
   padding: 0.375em;
   display: grid;
   place-content: center;
+  flex-shrink: 0;
 }
 
 .project__link {
@@ -563,8 +564,27 @@ hr {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   body {
-    font-size: 14px;
+    font-size: 18px;
+  }
+
+  .aside {
+    padding: 2em;
+  }
+
+  .main {
+    padding: 2em;
+  }
+
+  .project__link-wrapper,
+  .row__subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 125%;
+  }
+
+  .project__link-wrapper {
+    max-width: calc(100vw - 12em);
   }
 }

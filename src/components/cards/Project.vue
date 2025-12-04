@@ -39,7 +39,9 @@ export default {
       <div class="project__footer-logo">
         <img :src="logo" alt="" />
       </div>
-      <a class="project__link" :href="link.url">{{ link.anchor }}</a>
+      <div class="project__link-wrapper">
+        <a class="project__link" :href="link.url">{{ link.anchor }}</a>
+      </div>
     </div>
   </div>
 </template>
