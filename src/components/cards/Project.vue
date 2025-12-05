@@ -93,4 +93,16 @@ export default {
     justify-content: flex-start;
   }
 }
+
+@media (max-width: 440px) {
+  .project__link-wrapper {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 125%;
+  }
+
+  .project__link-wrapper {
+    max-width: calc(100vw - 12rem);
+  }
+}
 </style>
