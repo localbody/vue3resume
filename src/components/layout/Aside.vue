@@ -183,4 +183,25 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.aside {
+  width: 22.25rem;
+  background-color: var(--gray-lightest-2);
+  padding: 3rem;
+  display: grid;
+  gap: 2rem;
+  align-content: flex-start;
+}
+
+@media (max-width: 1200px) {
+  .aside {
+    width: initial;
+  }
+}
+
+@media (max-width: 440px) {
+  .aside {
+    padding: 2rem;
+  }
+}
+</style>

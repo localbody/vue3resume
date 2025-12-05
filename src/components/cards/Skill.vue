@@ -20,4 +20,31 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.skill .skill__logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.skill.card--big .skill__logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.skill {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+.skill__title {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.skill__subtitle {
+  font-size: 0.625rem;
+  text-align: center;
+  color: var(--gray-default);
+}
+</style>

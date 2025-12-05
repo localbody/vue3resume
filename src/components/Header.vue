@@ -23,4 +23,23 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.header {
+  display: grid;
+  gap: 1rem;
+}
+
+.header__photo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.header__name {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: var(--gray-darker);
+}
+</style>

@@ -235,4 +235,22 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main {
+  width: 52.6875rem;
+
+  padding: 4rem 3rem;
+}
+
+@media (max-width: 900px) {
+  .main {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 440px) {
+  .main {
+    padding: 2rem;
+  }
+}
+</style>

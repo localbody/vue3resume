@@ -31,4 +31,55 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.row {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.row__wrapper {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.rows--infos .row__icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: var(--gray-lightest);
+  display: grid;
+  place-content: center;
+}
+
+.rows--infos .row__icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.row__title {
+  font-size: 0.75rem;
+  color: var(--gray-default);
+}
+
+.row__text,
+.row__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-dark);
+  text-decoration: none;
+}
+
+.row__link--underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 440px) {
+  .row__subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 125%;
+  }
+}
+</style>
