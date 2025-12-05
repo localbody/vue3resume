@@ -45,7 +45,7 @@ export default {
             icon: '/icons/instagram.svg',
             title: 'Instagram',
             link: {
-              href: '@anurag.yadav.007',
+              href: 'https://www.instagram.com/anurag.yadav.007/',
               title: '@anurag.yadav.007',
             },
           },
@@ -53,7 +53,7 @@ export default {
             icon: '/icons/github.svg',
             title: 'Github',
             link: {
-              href: '@anuragyadav365',
+              href: 'https://github.com/AnuragYadav365',
               title: '@anuragyadav365',
             },
           },
@@ -61,7 +61,7 @@ export default {
             icon: '/icons/twitter.svg',
             title: 'Twitter',
             link: {
-              href: '@anuragmnp',
+              href: 'https://x.com/anuragmnp',
               title: '@anuragmnp',
             },
           },
@@ -69,7 +69,7 @@ export default {
             icon: '/icons/linkdin.svg',
             title: 'Linkedin',
             link: {
-              href: '@anuragyadav',
+              href: 'https://x.com/anuragmnp',
               title: '@anuragyadav',
             },
           },

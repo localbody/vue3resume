@@ -2,29 +2,8 @@
 export default {
   name: 'Experience',
   props: {
-    date: {
-      type: String,
-      required: true,
-    },
-    location: {
-      type: String,
-      required: true,
-    },
-    image: {
-      type: String,
-      required: true,
-    },
-
-    role: {
-      type: String,
-      required: true,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
+    experience: {
+      type: Object,
       required: true,
     },
   },
@@ -38,26 +17,27 @@ export default {
         <span
           class="experience__date"
           :class="{
-            'experience__date--present': date.toLowerCase() == 'present',
+            'experience__date--present':
+              experience.date.toLowerCase() == 'present',
           }"
         >
-          {{ date }}
+          {{ experience.date }}
         </span>
-        <div class="experience__location">{{ location }}</div>
+        <div class="experience__location">{{ experience.location }}</div>
       </div>
       <div class="experience__company">
         <div class="experience__company-logo">
-          <img :src="image" alt="" />
+          <img :src="experience.image" alt="" />
         </div>
         <div class="experience__company-wrapper">
-          <span class="experience__company-role">{{ role }}</span>
-          <span class="experience__company-name">{{ name }}</span>
+          <span class="experience__company-role">{{ experience.role }}</span>
+          <span class="experience__company-name">{{ experience.name }}</span>
         </div>
       </div>
     </div>
 
-    <p class="experience__description">{{ description }}</p>
+    <p class="experience__description">{{ experience.description }}</p>
   </div>
 </template>
 
-<style></style>
+<style scoped></style>

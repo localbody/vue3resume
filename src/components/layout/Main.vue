@@ -123,7 +123,7 @@ export default {
             name: 'Alexa Dev Community Landing Page',
             description: 'Web UI design for alexa developers comunity',
             logo: '/icons/figma--blue.svg',
-            link: { url: 'https//figma.com', anchor: 'https//figma.com' },
+            link: { url: 'https://figma.com', anchor: 'https://figma.com' },
           },
           {
             image: '/images/lighting.png',
@@ -188,21 +188,9 @@ export default {
         <div class="section__content">
           <div class="experiences">
             <Experience
-              v-for="{
-                date,
-                location,
-                image,
-                role,
-                name,
-                description,
-              } in cards.experience"
-              :key="name"
-              :date
-              :location
-              :image
-              :role
-              :name
-              :description
+              v-for="(item, index) in cards.experience"
+              :key="index"
+              :experience="item"
             />
           </div>
         </div>
@@ -230,6 +218,7 @@ export default {
           <div class="cards cards--projects">
             <Project
               v-for="{ image, name, description, logo, link } in cards.project"
+              :key="name"
               :image
               :name
               :description
@@ -246,6 +235,7 @@ export default {
           <div class="cards cards--certificates">
             <Award
               v-for="{ image, title, subtitle, dates } in cards.award"
+              :key="title"
               :image
               :title
               :subtitle
