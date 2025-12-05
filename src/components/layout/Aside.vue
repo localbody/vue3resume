@@ -141,9 +141,7 @@ export default {
       <div class="rows-wrapper">
         <Row
           v-for="(item, index) in itemsRows.infos"
-          :icon="item.icon"
-          :title="item.title"
-          :link="item.link"
+          :row="item"
           :key="index"
         />
       </div>
@@ -154,9 +152,7 @@ export default {
         <span class="rows__title">Socials</span>
         <Row
           v-for="(item, index) in itemsRows.socials"
-          :icon="item.icon"
-          :title="item.title"
-          :link="item.link"
+          :row="item"
           :key="index"
         />
       </div>
@@ -168,9 +164,7 @@ export default {
 
         <Row
           v-for="(item, index) in itemsRows.languages"
-          :icon="item.icon"
-          :title="item.title"
-          :link="item.link"
+          :row="item"
           :key="index"
         />
       </div>
@@ -181,8 +175,7 @@ export default {
         <span class="rows__title">Hobbies & Interests</span>
         <Row
           v-for="(item, index) in itemsRows.hobbies_interests"
-          :icon="item.icon"
-          :title="item.title"
+          :row="item"
           :key="index"
         />
       </div>

@@ -2,20 +2,8 @@
 export default {
   name: 'Award',
   props: {
-    image: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    subtitle: {
-      type: String,
-      required: true,
-    },
-    dates: {
-      type: String,
+    award: {
+      type: Object,
       required: true,
     },
   },
@@ -25,14 +13,14 @@ export default {
 <template>
   <div class="card award">
     <div class="award__logo">
-      <img :src="image" alt="" />
+      <img :src="award.image" alt="" />
     </div>
 
     <div class="award__wrapper">
-      <span class="award__title">{{ title }}</span>
-      <div class="award__subtitle">{{ subtitle }}</div>
+      <span class="award__title">{{ award.title }}</span>
+      <div class="award__subtitle">{{ award.subtitle }}</div>
     </div>
-    <div class="award__dates">{{ dates }}</div>
+    <div class="award__dates">{{ award.dates }}</div>
   </div>
 </template>
 

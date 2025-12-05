@@ -2,20 +2,8 @@
 export default {
   name: 'Skill',
   props: {
-    isBigCard: {
-      type: Boolean,
-      required: true,
-    },
-    image: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    subtitle: {
-      type: String,
+    skill: {
+      type: Object,
       required: true,
     },
   },
@@ -23,12 +11,12 @@ export default {
 </script>
 
 <template>
-  <div class="card skill" :class="{ 'card--big': isBigCard }">
+  <div class="card skill" :class="{ 'card--big': skill.isBigCard }">
     <div class="skill__logo">
-      <img :src="image" alt="" />
+      <img :src="skill.image" alt="" />
     </div>
-    <div class="skill__title">{{ title }}</div>
-    <div class="skill__subtitle">{{ subtitle }}</div>
+    <div class="skill__title">{{ skill.title }}</div>
+    <div class="skill__subtitle">{{ skill.subtitle }}</div>
   </div>
 </template>
 

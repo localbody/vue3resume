@@ -173,11 +173,7 @@ export default {
             <Education
               v-for="(item, index) in cards.education"
               :key="index"
-              :image="item.image"
-              :name="item.name"
-              :title="item.title"
-              :subtitle="item.subtitle"
-              :percentage="item.percentage"
+              :education="item"
             />
           </div>
         </div>
@@ -201,12 +197,9 @@ export default {
         <div class="section__content">
           <div class="cards skills cards--skills">
             <Skill
-              v-for="{ isBigCard, image, title, subtitle } in cards.skill"
-              :key="title"
-              :isBigCard
-              :image
-              :title
-              :subtitle
+              v-for="(item, index) in cards.skill"
+              :key="index"
+              :skill="item"
             />
           </div>
         </div>
@@ -217,13 +210,9 @@ export default {
         <div class="section__content">
           <div class="cards cards--projects">
             <Project
-              v-for="{ image, name, description, logo, link } in cards.project"
-              :key="name"
-              :image
-              :name
-              :description
-              :logo
-              :link
+              v-for="(item, index) in cards.project"
+              :key="index"
+              :project="item"
             />
           </div>
         </div>
@@ -234,12 +223,9 @@ export default {
         <div class="section__content">
           <div class="cards cards--certificates">
             <Award
-              v-for="{ image, title, subtitle, dates } in cards.award"
-              :key="title"
-              :image
-              :title
-              :subtitle
-              :dates
+              v-for="(item, index) in cards.award"
+              :key="index"
+              :award="item"
             />
           </div>
         </div>

@@ -2,24 +2,8 @@
 export default {
   name: 'Education',
   props: {
-    image: {
-      type: String,
-      required: true,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    subtitle: {
-      type: String,
-      required: true,
-    },
-    percentage: {
-      type: String,
+    education: {
+      type: Object,
       required: true,
     },
   },
@@ -30,13 +14,13 @@ export default {
   <div class="card education">
     <div class="education__header">
       <div class="education__emblem">
-        <img :src="image" alt="" />
+        <img :src="education.image" alt="" />
       </div>
-      <div class="education__name">{{ name }}</div>
+      <div class="education__name">{{ education.name }}</div>
     </div>
-    <div class="education__title">{{ title }}</div>
-    <div class="education__subtitle">{{ subtitle }}</div>
-    <div class="education__percentage">{{ percentage }}</div>
+    <div class="education__title">{{ education.title }}</div>
+    <div class="education__subtitle">{{ education.subtitle }}</div>
+    <div class="education__percentage">{{ education.percentage }}</div>
   </div>
 </template>
 
