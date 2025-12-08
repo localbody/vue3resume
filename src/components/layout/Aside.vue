@@ -193,9 +193,47 @@ export default {
   align-content: flex-start;
 }
 
+hr {
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray-lightest);
+}
+
+.rows {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.rows-wrapper {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.rows__title {
+  font-size: 0.75rem;
+  color: var(--gray-default);
+}
+
 @media (max-width: 1200px) {
   .aside {
     width: initial;
+  }
+
+  .rows-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 2fr);
+  }
+
+  .rows--infos .rows-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .rows-wrapper,
+  .rows--infos .rows-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 

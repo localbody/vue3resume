@@ -18,4 +18,17 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min-content;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

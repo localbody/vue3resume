@@ -238,13 +238,106 @@ export default {
 <style scoped>
 .main {
   width: 52.6875rem;
-
   padding: 4rem 3rem;
+}
+
+.sections {
+  display: grid;
+  gap: 3rem;
+  border-left: 1px solid var(--gray-lightest);
+}
+
+.section {
+  padding-left: 3rem;
+  position: relative;
+}
+
+.section::before {
+  position: absolute;
+  background-color: white;
+  content: '';
+  display: block;
+  top: 0rem;
+  left: -1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05), 0px 12px 48px rgba(0, 0, 0, 0.04),
+    inset 0px 2px 2px rgba(0, 0, 0, 0.04);
+}
+
+.section::after {
+  position: absolute;
+  content: '';
+  top: 0.75rem;
+  left: -0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  background-color: var(--primary-dark);
+}
+
+.section__title {
+  font-size: 1.5rem;
+  color: var(--gray-darker);
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card {
+  padding: 1rem 1.5rem;
+  background-color: var(--gray-lightest-2);
+}
+
+.cards--certificates {
+  display: grid;
+}
+
+.cards--skills {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards--skills > .card {
+  flex: 1 1 calc(20% - 0.5rem); /* каждый занимает пятую часть ширины контейнера */
+  max-width: calc(20% - 0.5rem);
+}
+
+.cards--skills > .card--big {
+  flex: 1 1 calc(33.33% - 0.5rem); /* каждый занимает треть ширины контейнера равномерно */
+  max-width: calc(33.33% - 0.5rem);
+}
+
+.experiences {
+  border-left: 1px solid var(--gray-lightest-2);
+  padding-left: 1.75em;
+  display: grid;
+  gap: 1.5em;
 }
 
 @media (max-width: 900px) {
   .main {
     width: 100vw;
+  }
+
+  .cards--projects {
+    flex-wrap: wrap;
+  }
+
+  .cards--education {
+    flex-direction: column;
+  }
+
+  .cards--skills > .card,
+  .cards--skills > .card--big {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
